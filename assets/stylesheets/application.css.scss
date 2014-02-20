@@ -1,0 +1,64 @@
+//= require_self
+//= require_tree
+
+@import "bootstrap";
+@import "compass";
+
+#top {
+  height: 650px;
+  background-image: url('bg.jpg');
+  background-size: 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  #header.container {
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 105px;
+    @include border-radius(0px 0px 15px 15px, 0px 0px 15px 15px);
+
+    a#logo {
+      display: block;
+      background-image: url('logo.png');
+      text-indent: -9999px;
+      background-size: 100%;
+      height: 100px;
+      width: 250px;
+      background-repeat: no-repeat;
+    }
+
+  }
+
+}
+
+#highlights.container {
+  position: relative;
+  margin-top: -30px;
+  background-color: rgb(255, 255, 255);
+  @include border-radius(15px 15px 15px 15px, 15px 15px 15px 15px);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  height: 160px;
+  padding: 15px;
+  width: 960px;
+
+  ul {
+    list-style: none;
+    padding-left: 0px;
+
+    li {
+      margin-right: 15px;
+      display: block;
+      float: left;
+      width: 300px;
+      height: 130px;
+      background-color: #000000;
+      &:last-child { margin-right: 0px }
+
+      .inner {
+        color: #333;
+        text-align: center;
+        margin-top: 50px;
+      }
+    }
+
+  }
+}

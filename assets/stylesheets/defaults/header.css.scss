@@ -1,0 +1,52 @@
+@import 'shared';
+
+#header {
+  @extend #background;
+  z-index: 99;
+  width:         100%;
+  height:        75px;
+  position:      fixed;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+
+  nav {
+    background-color: rgba(255, 255, 255, 0.5);
+    overflow-y:       visible;
+    position:         absolute;
+    font-size:        1.2em;
+    font-family:      'Neou';
+    font-weight:      bold;
+    right:            0px;
+    width:            100%;
+    height:           100%;
+
+    .inner {
+      position: absolute;
+      left:     250px;
+      bottom:   0px;
+
+      ul {
+        @extend .clearfix;
+        list-style:  none;
+        text-indent: none;
+        margin:      0px;
+
+        li {
+          float:        left;
+          margin-right: 50px;
+
+          a {
+            color:          #444;
+            display:        block;
+            border-bottom:  3px transparent solid;
+            transition:     border-bottom 0.5s;
+            padding-bottom: 0px;
+            &:hover {
+              text-decoration: none;
+              border-bottom:   3px solid rgba(0, 0, 0, 0.5);
+            }
+          }
+        }
+      }
+    }
+  }
+}

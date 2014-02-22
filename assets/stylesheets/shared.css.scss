@@ -1,0 +1,41 @@
+$grid-gutter_width: 15px;
+$grid-columns: 18;
+
+@import "bootstrap";
+
+@for $i from 1 through $grid-columns {
+  .span-#{$i} {
+    @extend .col-lg-#{$i};
+    @extend .col-md-#{$i};
+    @extend .col-sm-#{$i};
+    @extend .col-xs-#{$i};
+  }
+
+  .offset-#{$i} {
+    @extend .col-lg-offset-#{$i};
+    @extend .col-md-offset-#{$i};
+    @extend .col-sm-offset-#{$i};
+    @extend .col-xs-offset-#{$i};
+  }
+}
+
+#background {
+  background-position:   top center;
+  background-attachment: fixed;
+  background-repeat:     no-repeat;
+  background-image:      url('Carly-14.jpg');
+  background-size:       100%;
+}
+
+#logo {
+  $logo-padding: 10px;
+  $logo-size: 98px;
+  position:              absolute;
+  width:                 100%;
+  height:                $logo-size + ($logo-padding * 2);
+  background-position:   $logo-padding $logo-padding;
+  background-attachment: fixed;
+  background-repeat:     no-repeat;
+  background-image:      url('logo.png');
+  background-size:       auto $logo-size;
+}

@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Admiration Pains';
+  src:         url(admiration-pains.ttf);
+}
+
+@font-face {
+  font-family: 'basic title font';
+  src:         url(basic-title-font.ttf);
+}
+
+@font-face {
+  font-family: 'Brain Flower';
+  src:         url(brain-flower.ttf);
+}
+
+@font-face {
+  font-family: 'Neou';
+  src:         url(neou-thin.otf);
+}
+
+@font-face {
+  font-family: 'Neou';
+  src:         url(neou-bold.otf);
+  font-weight: bold;
+}

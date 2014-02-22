@@ -1,0 +1,39 @@
+@import 'shared';
+@import "compass/css3/border-radius";
+
+#highlights {
+
+  position: relative;
+  margin-top: -30px;
+  background-color: rgb(255, 255, 255);
+  //@include border-radius(15px 15px 15px 15px, 15px 15px 15px 15px);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  height: 145px;
+  padding-top: $grid-gutter_width / 2;
+
+  @extend .span-12;
+  @extend .offset-3;
+
+  ul {
+    @extend .clearfix;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+
+    li {
+      @extend .span-6;
+      padding: 0px;
+      padding-right: $grid-gutter_width / 2;
+      &:last-child { padding-right: 0 };
+
+      .inner {
+        height: 130px;
+        background-color: #000000;
+        display: block;
+        color: #333;
+        text-align: center;
+      }
+    }
+  }
+
+}

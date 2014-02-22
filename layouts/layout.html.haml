@@ -1,0 +1,25 @@
+!!!
+%html
+  %head
+    %title Carly Paige
+    = stylesheet_tag :application
+  %body
+    #wrapper
+      #header
+        %nav
+          #logo
+          .inner
+            %ul
+              %li
+                = link_to 'about', '#about'
+              %li
+                = link_to 'events', '#events'
+              %li
+                = link_to 'music', '#music'
+              %li
+                = link_to 'media', '#media'
+              %li
+                = link_to 'store', '#store'
+              %li
+                = link_to 'contact', '#contact'
+      = yield

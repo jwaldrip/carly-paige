@@ -1,0 +1,25 @@
+@import 'shared';
+
+#content {
+  margin-top: 45px;
+  height: 2000px;
+
+  #left, #right {
+    @extend .span-9;
+  }
+
+  h1 {
+    font-family: "basic title font";
+    text-align: center;
+    background-image: url('header-line.png');
+    background-size: 100% 2px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 0.2em;
+
+    span {
+      background-color: white;
+      padding: 0 5px;
+    }
+  }
+}

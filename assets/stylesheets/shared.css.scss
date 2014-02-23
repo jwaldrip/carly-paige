@@ -26,16 +26,3 @@ $grid-columns: 18;
   background-image:      url('Carly-14.jpg');
   background-size:       100%;
 }
-
-#logo {
-  $logo-padding: 10px;
-  $logo-size: 98px;
-  position:              absolute;
-  width:                 100%;
-  height:                $logo-size + ($logo-padding * 2);
-  background-position:   $logo-padding $logo-padding;
-  background-attachment: fixed;
-  background-repeat:     no-repeat;
-  background-image:      url('logo.png');
-  background-size:       auto $logo-size;
-}

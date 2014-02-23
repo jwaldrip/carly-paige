@@ -14,8 +14,12 @@
 .container
   #content
     #left
-      %h1
-        %span.inner left content
+      #feature-video
+        %h1
+          %span.inner Feature Video
+        %iframe{ width: 555, height: 312, src: "//www.youtube.com/embed/ZXqzo06DPaI?wmode=transparent", frameborder: "0", allowfullscreen: true, wmode: "Opaque" }
+        .pull-right
+          = link_to 'view all videos', '//www.youtube.com/user/carlypaigemusic'
     #right
       %h1
         %span.inner right content

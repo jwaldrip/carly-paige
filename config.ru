@@ -2,8 +2,8 @@ require './boot'
 require 'rack/cache'
 
 # Clear the cache before starting
-ActiveSupport::Cache.lookup_store(:file_store, 'tmp/cache').clear
 FileUtils.mkdir_p 'tmp/cache'
+ActiveSupport::Cache.lookup_store(:file_store, 'tmp/cache').clear
 
 use Rack::Deflater
 use Rack::Cache,

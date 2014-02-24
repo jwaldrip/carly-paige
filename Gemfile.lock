@@ -45,6 +45,7 @@ GEM
       haml
     hike (1.2.3)
     i18n (0.6.9)
+    json (1.8.1)
     mapel (0.1.6)
     method_source (0.8.2)
     minitest (4.7.5)
@@ -79,6 +80,9 @@ GEM
       atomic
     tilt (1.4.1)
     tzinfo (0.3.38)
+    uglifier (2.4.0)
+      execjs (>= 0.3.0)
+      json (>= 1.8.0)
 
 PLATFORMS
   ruby
@@ -95,3 +99,4 @@ DEPENDENCIES
   rack-cache
   rack-thumb
   thin
+  uglifier

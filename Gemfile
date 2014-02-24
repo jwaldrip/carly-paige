@@ -10,6 +10,7 @@ gem 'bower'
 gem 'dalli'
 gem 'rack-thumb'
 gem 'rack-cache'
+gem 'uglifier'
 
 group :development do
   gem 'foreman'

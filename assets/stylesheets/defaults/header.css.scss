@@ -15,10 +15,6 @@ $header-size: 115px;
   height:                $header-size;
   position:              fixed;
 
-  // Logo stuff
-  $logo-padding: 10px;
-  $logo-size: 95px;
-
   nav {
     @extend .clearfix;
     background-color: rgba(255, 255, 255, 0.5);
@@ -26,13 +22,6 @@ $header-size: 115px;
     font-family:      'Neou';
     font-weight:      bold;
     border-bottom:    1px solid rgba(0, 0, 0, 0.5);;
-
-    img#logo {
-      @extend .pull-left;
-      padding-left: $logo-padding;
-      padding-top:  $logo-padding;
-      height:       $logo-size + ($logo-padding * 2);
-    }
 
     #header-nav {
       @extend .pull-right;

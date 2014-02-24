@@ -1,5 +1,4 @@
-//= require fonts
-//= require_self
-//= require_tree ./defaults
-
+// We are going to use sass to manage our requires, dont use sprockets
+@import "fonts";
 @import "shared";
+@import "defaults/**/*";

@@ -1,11 +1,10 @@
-@import 'shared';
-
 #page-content {
   z-index: -99;
 }
 
 #content {
   margin-top: 45px;
+  height: 2000px;
   font-size: 1.3em;
 
   #left, #right {

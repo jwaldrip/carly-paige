@@ -18,11 +18,3 @@ $grid-columns: 18;
     @extend .col-xs-offset-#{$i};
   }
 }
-
-#background {
-  background-position:   top center;
-  background-attachment: fixed;
-  background-repeat:     no-repeat;
-  background-image:      url('Carly-14.jpg');
-  background-size:       100%;
-}

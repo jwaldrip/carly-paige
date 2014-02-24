@@ -1,0 +1,35 @@
+.background {
+  background-position:   top center;
+  background-attachment: fixed;
+  background-repeat:     no-repeat;
+  background-size:       100%;
+  transition:            background-image 2s;
+}
+
+$bg-count: 3;
+
+@for $i from 1 through $bg-count {
+  $image-path: 'bg-#{$i}.jpg';
+
+  .background-#{$i} {
+    background-image: url(sized_image($image-path, 2000px));
+  }
+
+  @media (max-width: $screen-md-max) {
+    .background-#{$i} {
+      background-image: url(sized_image($image-path, $screen-md-max));
+    }
+  }
+
+  @media (max-width: $screen-sm-max) {
+    .background-#{$i} {
+      background-image: url(sized_image($image-path, $screen-sm-max));
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    .background-#{$i} {
+      background-image: url(sized_image($image-path, $screen-xs-max));
+    }
+  }
+}

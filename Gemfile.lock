@@ -22,10 +22,11 @@ GEM
       fssm (>= 0.2.7)
       sass (~> 3.1)
     daemons (1.1.9)
-    dotenv (0.9.0)
+    dalli (2.7.0)
+    dotenv (0.10.0)
     eventmachine (1.0.3)
     execjs (2.0.2)
-    flatrack (1.0.0.alpha4)
+    flatrack (1.0.0.alpha5)
       activesupport
       coffee-script
       rack
@@ -44,6 +45,7 @@ GEM
       haml
     hike (1.2.3)
     i18n (0.6.9)
+    mapel (0.1.6)
     method_source (0.8.2)
     minitest (4.7.5)
     multi_json (1.8.4)
@@ -52,6 +54,11 @@ GEM
       method_source (~> 0.8)
       slop (~> 3.4)
     rack (1.5.2)
+    rack-cache (1.2)
+      rack (>= 0.4)
+    rack-thumb (0.2.4)
+      mapel (>= 0.1.6)
+      rack
     rake (10.1.1)
     sass (3.2.14)
     slop (3.4.7)
@@ -80,8 +87,11 @@ DEPENDENCIES
   bootstrap-sass (~> 3.0.3.0)
   bower
   compass
-  flatrack (~> 1.0.0.alpha4)
+  dalli
+  flatrack (~> 1.0.0.alpha5)
   foreman
   haml-flatrack
   pry
+  rack-cache
+  rack-thumb
   thin

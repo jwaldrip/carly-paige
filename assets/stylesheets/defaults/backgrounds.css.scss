@@ -1,10 +1,9 @@
 @import 'bootstrap/variables';
 
 .background {
-  background-position:   top center;
+  background: url(img2x.jpg) 50% 0%/100%;
   background-attachment: fixed;
   background-repeat:     no-repeat;
-  background-size:       100%;
   transition:            background-image 2s;
 }
 

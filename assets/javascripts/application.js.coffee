@@ -1,9 +1,9 @@
 #= require 'jquery'
-#= require 'jquery-scrollspy-thesmart/scrollspy'
 #= require_self
 #= require_tree
 
+window.rotate = (a) ->
+  a.unshift a.pop()
+  a
+
 $(document).ready ->
-  $('.container').on 'scrollSpy:enter', ->
-    console.log 'enter:', $(this).attr('id')
-  return null

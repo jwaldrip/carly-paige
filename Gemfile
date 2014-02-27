@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.1.0'
 
-gem 'flatrack', '~> 1.0.0.alpha5'
+gem 'flatrack', '~> 1.0.0.alpha5', path: '../../Gems/flatrack'
 gem 'haml-flatrack'
 gem 'thin'
 gem 'bootstrap-sass', '~> 3.0.3.0'

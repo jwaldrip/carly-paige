@@ -1,3 +1,16 @@
+PATH
+  remote: ../../Gems/flatrack
+  specs:
+    flatrack (1.0.0.alpha5)
+      activesupport
+      coffee-script
+      rack
+      rake
+      sass
+      sprockets
+      sprockets-sass
+      thor
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -26,15 +39,6 @@ GEM
     dotenv (0.10.0)
     eventmachine (1.0.3)
     execjs (2.0.2)
-    flatrack (1.0.0.alpha5)
-      activesupport
-      coffee-script
-      rack
-      rake
-      sass
-      sprockets
-      sprockets-sass
-      thor
     foreman (0.63.0)
       dotenv (>= 0.7)
       thor (>= 0.13.6)
@@ -92,7 +96,7 @@ DEPENDENCIES
   bower
   compass
   dalli
-  flatrack (~> 1.0.0.alpha5)
+  flatrack (~> 1.0.0.alpha5)!
   foreman
   haml-flatrack
   pry

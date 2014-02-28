@@ -7,7 +7,7 @@
   font-size: 1.3em;
 
   #left, #right {
-    @extend .span-9;
+    @extend .span-9 !optional;
   }
 
   h1 {

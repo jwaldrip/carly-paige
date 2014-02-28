@@ -12,8 +12,10 @@ FileUtils.mkdir_p 'tmp/cache'
 
 Flatrack.config do |site|
   site.use Rack::Deflater
+  site.use Rack::Cache,
+           metastore:   'file:tmp/cache/rack/meta',
+           entitystore: 'file:tmp/cache/rack/body'
   site.use Rack::Thumb
-  # site.cache_store = :file_store, 'tmp/cache'
   site.assets.js_compressor  = :uglify if ENV['RACK_ENV'] == 'production'
   site.assets.css_compressor = :scss if ENV['RACK_ENV'] == 'production'
   site.assets.append_path 'assets/fonts'

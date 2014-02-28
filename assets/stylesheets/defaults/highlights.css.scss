@@ -11,17 +11,17 @@
   height: 145px;
   padding-top: $grid-gutter_width / 2;
 
-  @extend .span-12;
-  @extend .offset-3;
+  @extend .span-12 !optional;
+  @extend .offset-3 !optional;
 
   ul {
-    @extend .clearfix;
+    @extend .clearfix !optional;
     list-style: none;
     padding: 0px;
     margin: 0px;
 
     li {
-      @extend .span-6;
+      @extend .span-6 !optional;
       padding: 0px;
       padding-right: $grid-gutter_width / 2;
       &:last-child { padding-right: 0 };

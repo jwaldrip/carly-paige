@@ -5,7 +5,7 @@ STDOUT.sync = true
 require 'bundler/setup'
 Bundler.require(:default)
 
-require 'sass_functions'
+require 'includes/sass_functions'
 
 # Ensure the cache dir exists
 FileUtils.mkdir_p 'tmp/cache'

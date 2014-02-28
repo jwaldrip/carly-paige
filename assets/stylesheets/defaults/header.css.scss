@@ -16,7 +16,7 @@ $header-size: 115px;
   position:              fixed;
 
   nav {
-    @extend .clearfix;
+    @extend .clearfix !optional;
     background-color: rgba(255, 255, 255, 0.5);
     font-size:        1.2em;
     font-family:      'Neou';
@@ -24,11 +24,11 @@ $header-size: 115px;
     border-bottom:    1px solid rgba(0, 0, 0, 0.5);;
 
     #header-nav {
-      @extend .pull-right;
+      @extend .pull-right !optional;
       margin-right: 15px;
 
       ul {
-        @extend .clearfix;
+        @extend .clearfix !optional;
         list-style:  none;
         text-indent: none;
         margin:      0px;
@@ -40,10 +40,10 @@ $header-size: 115px;
       }
 
       #nav-links {
-        @extend .clearfix;
+        @extend .clearfix !optional;
         margin-top: 20px;
         ul {
-          @extend .pull-right;
+          @extend .pull-right !optional;
           li { margin-right: 5px; }
         }
       }

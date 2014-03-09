@@ -1,9 +1,43 @@
 #banner {
-  z-index: 98;
+  position: relative;
+  padding-top:   115px;
+  z-index:       97;
   height:        650px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 
-//  .background :first-child {
-//    display: none;
-//  }
+  .previews {
+    position: absolute;
+    bottom: 0;
+    .preview {
+      opacity:               0.5;
+      $size: 75px;
+      @extend .pull-left;
+      background-size:       auto $size;
+      background-attachment: scroll;
+      position:              relative;
+      bottom:                0px;
+      width:                 $size;
+      height:                $size;
+    }
+  }
+
+  .active {
+    border: 3px solid #333;
+  }
+
+  &.background-1 .background-1 {
+    @extend .active;
+  }
+
+  &.background-2 .background-2 {
+    @extend .active;
+  }
+
+  &.background-3 .background-3 {
+    @extend .active;
+  }
+
+  //  .background :first-child {
+  //    display: none;
+  //  }
 }

@@ -3,7 +3,5 @@
 #= require_tree
 
 window.rotate = (a) ->
-  a.unshift a.pop()
+  a.push a.shift()
   a
-
-$(document).ready ->

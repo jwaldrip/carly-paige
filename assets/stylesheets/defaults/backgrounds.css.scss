@@ -1,7 +1,7 @@
 @import 'bootstrap/variables';
 
 .background {
-  background: url(img2x.jpg) 50% 0%/100%;
+  background:            50% 0%/100%;
   background-attachment: fixed;
   background-repeat:     no-repeat;
   transition:            background-image 2s;
@@ -9,28 +9,21 @@
 
 $bg-count: 3;
 
-@for $i from 1 through $bg-count {
-  $image-path: 'bg-#{$i}.jpg';
+@for $n from 1 through $bg-count {
+  $image-path: 'bg-#{$n}.jpg';
 
-  .background-#{$i} {
-    background-image: url(sized_image($image-path, 2000px));
+  .background-#{$n} {
+    background-image: url($image-path);
   }
 
-  @media (max-width: $screen-md-max) {
-    .background-#{$i} {
-      background-image: url(sized_image($image-path, $screen-md-max));
-    }
-  }
-
-  @media (max-width: $screen-sm-max) {
-    .background-#{$i} {
-      background-image: url(sized_image($image-path, $screen-sm-max));
-    }
-  }
-
-  @media (max-width: $screen-xs-max) {
-    .background-#{$i} {
-      background-image: url(sized_image($image-path, $screen-xs-max));
+  @for $size from 0px - image-width('/assets/images/' + $image_path) through 0px - 100px {
+    $size: 0px - $size;
+    @if $size % 100 == 0 {
+      @media (max-width: $size) {
+        .background-#{$n} {
+          background-image: url(sized_image($image-path, $size));
+        }
+      }
     }
   }
 }

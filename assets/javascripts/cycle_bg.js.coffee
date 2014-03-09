@@ -2,13 +2,22 @@ backgrounds = [1, 2, 3]
 
 window.cycle_image = ->
   sbkgs = rotate(backgrounds).slice(0)
-  actbkg = sbkgs.pop()
-  $('.background').addClass('background-' + actbkg)
-  $.each sbkgs, (index, value)->
-    $('.background').removeClass('background-' + value)
+  pickBG(sbkgs.pop())
 
-window.delayLoop = (ms, func)->
-  runner = ->
-    func()
-    delayLoop(ms, func)
-  setTimeout runner, ms
+window.pickBG = (int)->
+  $.each backgrounds, (index, value)->
+    $('.background').removeClass('background-' + value)
+  $('.background').addClass('background-' + int)
+
+window.stayOnBg = (int)->
+  window.delayRunners = []
+  pickBG(int)
+
+window.delayRunners = []
+
+window.startDelayLoop = (ms, func)->
+  delayLoop = ->
+    $.each delayRunners, (index, job)->
+      job()
+    setTimeout delayLoop, ms
+  delayLoop()

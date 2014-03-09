@@ -9,6 +9,7 @@ require 'includes/sass_functions'
 
 # Ensure the cache dir exists
 FileUtils.mkdir_p 'tmp/cache'
+FileUtils.rm_rf 'tmp/cache/**'
 
 Flatrack.config do |site|
   site.use Rack::Deflater

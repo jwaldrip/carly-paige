@@ -24,5 +24,4 @@ Flatrack.config do |site|
   site.assets.append_path Bootstrap.stylesheets_path
   site.assets.append_path Bootstrap.fonts_path
   site.assets.append_path Bootstrap.javascripts_path
-  site.assets.append_path Bower.environment.directory
 end

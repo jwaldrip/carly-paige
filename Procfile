@@ -1,1 +1,1 @@
-web: bundle exec flatrack start $PORT
+web: bundle exec flatrack start --port $PORT

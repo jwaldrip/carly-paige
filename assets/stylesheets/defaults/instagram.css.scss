@@ -1,0 +1,12 @@
+#recent-instagram {
+  img {
+    border: 1px #777 solid;
+  }
+}
+
+#instagram-feed {
+  @extend .clearfix;
+  img {
+    border: 1px #777 solid;
+  }
+}

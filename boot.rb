@@ -6,6 +6,7 @@ require 'bundler/setup'
 Bundler.require(:default)
 
 require 'includes/sass_functions'
+Dir['./helpers/**/*.rb'].sort.each { |f| require f }
 
 # Ensure the cache dir exists
 FileUtils.mkdir_p 'tmp/cache'

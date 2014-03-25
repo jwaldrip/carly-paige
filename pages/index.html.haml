@@ -35,10 +35,10 @@
             %span.inner Facebook Feed
 
       #right
-        #latest-instagram
+        #recent-instagram
           %h1
-            %span.inner Latest Instagram
-          %img{ src: asset_path('black-px.png'), width: '100%' }
+            %span.inner Recent Instagram
+          = render :latest_instagram
         #upcoming-events
           %h1
             %span.inner Upcoming Events
@@ -47,6 +47,7 @@
       %section#instagram-feed
         %h1
           %span.inner Instagram Feed
+        = render :instagram_feed
 
 :coffee
   delayRunners.push cycle_image

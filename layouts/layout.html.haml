@@ -13,11 +13,21 @@
             #header-nav
               #nav-links
                 %ul
-                  %li= link_to "<img src='#{asset_path('fb-dark.png')}'>", '#facebook'
-                  %li= link_to "<img src='#{asset_path('twitter-dark.png')}'>", '#twitter'
-                  %li= link_to "<img src='#{asset_path('youtube-dark.png')}'>", '#youtube'
-                  %li= link_to "<img src='#{asset_path('itunes-dark.png')}'>", '#itunes'
-                  %li= link_to "<img src='#{asset_path('gplus-dark.png')}'>", '#gplus'
+                  %li
+                    = link_to '#facebook' do
+                      = image_tag 'fb-dark.png'
+                  %li
+                    = link_to '#twitter' do
+                      = image_tag 'twitter-dark.png'
+                  %li
+                    = link_to '#youtube' do
+                      = image_tag 'youtube-dark.png'
+                  %li
+                    = link_to '#itunes' do
+                      = image_tag 'itunes-dark.png'
+                  %li
+                    = link_to '#gplus' do
+                      = image_tag 'gplus-dark.png'
               #nav-menu
                 %ul
                   %li= link_to 'about', '#about'

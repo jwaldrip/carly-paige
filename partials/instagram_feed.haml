@@ -1,0 +1,4 @@
+- extend InstagramHelper
+- get_media.first(6).each do |image|
+  .span-3
+    = image_tag image.thumbnail, width: '100%'

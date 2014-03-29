@@ -1,27 +1,18 @@
 $header-size: 115px;
 
-#invisible-line {
-  position:      fixed;
-  z-index:       -1;
-  height:        $header-size + 1;
-  width:         100%;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);;
-}
-
 #header {
-  background-attachment: scroll;
+  background-color: rgb(255, 255, 255);
   z-index:               99;
   width:                 100%;
   height:                $header-size;
   position:              fixed;
+  border-bottom:    1px solid rgba(0, 0, 0, 0.5);;
 
   nav {
     @extend .clearfix !optional;
-    background-color: rgba(255, 255, 255, 0.5);
     font-size:        1.2em;
     font-family:      'Neou';
     font-weight:      bold;
-    border-bottom:    1px solid rgba(0, 0, 0, 0.5);;
 
     #header-nav {
       @extend .pull-right !optional;

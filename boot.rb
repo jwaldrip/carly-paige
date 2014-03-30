@@ -3,7 +3,7 @@ $: << File.dirname(__FILE__)
 STDOUT.sync = true
 
 require 'bundler/setup'
-Bundler.require(:default)
+Bundler.require(:default, ENV['RACK_ENV'])
 
 require 'includes/sass_functions'
 Dir['./helpers/**/*.rb'].sort.each { |f| require f }

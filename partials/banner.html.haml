@@ -1,0 +1,39 @@
+#banner
+  .banner.background-1.active
+    .container
+      #find_me_on.center.pull-right
+        :sass
+          #find_me_on
+            margin-top: 50px
+            text-align: center
+            ul
+              list-style: none
+              padding: 0
+              li
+                display: block
+                margin-top: 25px
+        = image_tag 'find_me_on.png'
+        %ul
+          %li
+            = facebook_link do
+              = image_tag 'facebook_full.png'
+          %li
+            = youtube_link do
+              = image_tag 'youtube_full.png'
+          %li
+            = twitter_link do
+              = image_tag 'twitter_full.png'
+          %li
+            = itunes_link do
+              = image_tag 'itunes_full.png'
+          %li
+            = instagram_link do
+              = image_tag 'instagram_full.png'
+  .banner.background-2
+    .container
+      Banner 2
+  .banner.background-3
+    .container
+      Banner 3
+:coffee
+  require ['banners']

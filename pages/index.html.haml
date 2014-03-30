@@ -1,8 +1,4 @@
-#banner.background.background-1
-  .previews
-    .preview.background-1{ onClick: "stayOnBg(1)"}
-    .preview.background-2{ onClick: "stayOnBg(2)"}
-    .preview.background-3{ onClick: "stayOnBg(3)"}
+= render :banner
 .container
   #highlights
     %ul
@@ -48,7 +44,3 @@
         %h1
           %span.inner Instagram Feed
         = render :instagram_feed
-
-:coffee
-  delayRunners.push cycle_image
-  startDelayLoop(5000, cycle_image)

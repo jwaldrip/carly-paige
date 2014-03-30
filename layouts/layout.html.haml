@@ -1,42 +1,13 @@
 !!!
+- extend LinkHelper
 %html
   %head
     %title Carly Paige
     = stylesheet_tag :main
+    = html_tag :script, '', data: { main: 'assets/main' }, src: asset_path('require.js')
     = javascript_tag '//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js'
-    = javascript_tag :main
   %body
-    #header
-      .container
-        %nav.span-18
-          %img.logo{ src: asset_path('logo-dark.png') }
-          #header-nav
-            #nav-links
-              %ul
-                %li
-                  = link_to '#facebook' do
-                    = image_tag 'fb-dark.png'
-                %li
-                  = link_to '#twitter' do
-                    = image_tag 'twitter-dark.png'
-                %li
-                  = link_to '#youtube' do
-                    = image_tag 'youtube-dark.png'
-                %li
-                  = link_to '#itunes' do
-                    = image_tag 'itunes-dark.png'
-                %li
-                  = link_to '#gplus' do
-                    = image_tag 'gplus-dark.png'
-            #nav-menu
-              %ul
-                %li= link_to 'about', '#about'
-                %li= link_to 'events', '#events'
-                %li= link_to 'music', '#music'
-                %li= link_to 'media', '#media'
-                %li= link_to 'store', '#store'
-                %li= link_to 'contact', '#contact'
-      #invisible-line
+    = render :header
     #page-content
       = yield
     #footer

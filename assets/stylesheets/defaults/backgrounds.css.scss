@@ -12,6 +12,7 @@ $bg-count: 3;
   $image-path: 'bg-#{$n}.jpg';
 
   .background-#{$n} {
+    @extend .background;
     background-image: url($image-path);
   }
 

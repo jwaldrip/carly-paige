@@ -35,5 +35,7 @@
   .banner.background-3
     .container
       Banner 3
+  = link_to 'prev', '#', onclick: 'previousBanner()'
+  = link_to 'next', '#', onclick: 'nextBanner()'
 :coffee
   require ['banners']

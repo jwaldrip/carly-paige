@@ -2,7 +2,6 @@ require 'faraday'
 require 'faraday_middleware'
 require 'active_support/all'
 require 'json'
-require 'pry'
 
 module InstagramHelper
 

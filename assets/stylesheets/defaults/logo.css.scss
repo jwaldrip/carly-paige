@@ -1,0 +1,14 @@
+@import 'fonts';
+
+.logo {
+  font-weight: normal;
+  span {
+    &.carly {
+      font-family: 'Admiration Pains';
+    }
+    &.paige {
+      font-size: 1.8em;
+      font-family: 'Brain Flower'
+    }
+  }
+}

@@ -4,15 +4,19 @@
       #find_me_on.center.pull-right
         :sass
           #find_me_on
-            margin-top: 50px
+            .section-header
+              font-family: 'Brain Flower'
+              font-size: 120px
+            margin-top: 20px
             text-align: center
             ul
               list-style: none
               padding: 0
               li
                 display: block
-                margin-top: 25px
-        = image_tag 'find_me_on.png'
+                margin-bottom: 25px
+        .section-header
+          Find Me On
         %ul
           %li
             = facebook_link do
@@ -35,7 +39,10 @@
   .banner.background-3
     .container
       Banner 3
-  = link_to 'prev', '#', onclick: 'previousBanner()'
-  = link_to 'next', '#', onclick: 'nextBanner()'
+  .nav
+    = link_to '#', onclick: 'nextBanner()', class: 'previous' do
+      = image_tag 'prev-banner.png'
+    = link_to '#', onclick: 'previousBanner()', class: 'next' do
+      = image_tag 'next-banner.png'
 :coffee
   require ['banners']

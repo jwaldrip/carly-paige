@@ -38,14 +38,3 @@ $grid-columns: 18;
 #content section {
   margin-bottom: 60px;
 }
-
-// Logo stuff
-$logo-padding: 10px;
-$logo-size: 95px;
-
-img.logo {
-  @extend .pull-left;
-  padding-left: $logo-padding;
-  padding-top:  $logo-padding;
-  height:       $logo-size + ($logo-padding * 2);
-}

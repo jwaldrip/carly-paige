@@ -6,7 +6,9 @@ $header-size: 115px;
   width:                 100%;
   height:                $header-size;
   position:              fixed;
-  border-bottom:    1px solid rgba(0, 0, 0, 0.5);;
+  border-bottom:    1px solid rgba(0, 0, 0, 0.5);
+
+  .logo { font-size: 45px; }
 
   nav {
     @extend .clearfix !optional;

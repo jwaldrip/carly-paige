@@ -1,8 +1,9 @@
 #banner {
+  $banner-height: 600px;
+  top: 115px;
   position: relative;
-  padding-top:   115px;
   z-index:       97;
-  height:        700px;
+  height:        $banner-height;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 
   .banner {
@@ -14,5 +15,23 @@
       display: block;
     }
 
+  }
+
+  .nav {
+    @extend .clearfix;
+    @extend .container;
+    display: block;
+    position: relative;
+    margin-top: -($banner-height / 2) - 22px;
+  }
+
+  .next {
+    margin-right: -43px;
+    @extend .pull-right;
+  }
+
+  .previous {
+    margin-left: -43px;
+    @extend .pull-left;
   }
 }

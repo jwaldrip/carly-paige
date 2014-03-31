@@ -1,7 +1,11 @@
 @import 'fonts';
 
 .logo {
-  font-weight: normal;
+  a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: normal;
+  }
   span {
     &.carly {
       font-family: 'Admiration Pains';

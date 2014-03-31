@@ -1,5 +1,10 @@
 $header-size: 115px;
 
+body {
+  position: relative;
+  top: $header-size;
+}
+
 #header {
   background-color: rgb(255, 255, 255);
   z-index:               99;
